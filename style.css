@@ -1,0 +1,48 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+html {scroll-behavior:smooth;}
+body{font-family:"Poppins",sans-serif;background:#06080f;color:#fff;overflow-x:hidden;}
+
+/* Fondo animado */
+.bg{position:absolute;width:200%;height:200%;background:
+  radial-gradient(circle at 40% 30%, #00c8d733, transparent 70%),
+  radial-gradient(circle at 80% 60%, #d4af3733, transparent 70%);
+  animation:moveBg 10s linear infinite;z-index:0;}
+@keyframes moveBg{0%{transform:translate(0,0);}50%{transform:translate(-10%,-10%) scale(1.05);}100%{transform:translate(0,0);}}
+
+/* Header */
+header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;}
+.logo{z-index:1;animation:fadeIn 1.6s ease;}
+#logo-img{max-width:380px;width:90%;height:auto;display:block;margin:0 auto;}
+@keyframes fadeIn{from{opacity:0;transform:scale(0.9);}to{opacity:1;transform:scale(1);}}
+
+/* Intro */
+.intro{margin-top:20px;max-width:800px;font-size:18px;line-height:1.6;color:#ccd5da;z-index:1;}
+.buttons{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;z-index:1;}
+.btn{padding:12px 24px;border-radius:40px;background:linear-gradient(90deg,#00c8d7,#2fc2cc,#d4af37);color:#fff;text-decoration:none;font-weight:600;transition:transform .2s,box-shadow .2s;}
+.btn:hover{transform:scale(1.03);box-shadow:0 0 14px #00c8d7;}
+
+/* Sections */
+section{padding:80px 16px;text-align:center;}
+section:nth-of-type(even){background:#0a0f1f;}
+h2{font-size:32px;margin-bottom:30px;background:linear-gradient(90deg,#00c8d7,#d4af37);-webkit-background-clip:text;color:transparent;}
+
+/* Cards */
+.cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
+.card{background:#0f162a;border-radius:14px;padding:20px;width:300px;box-shadow:0 0 18px #000;transition:transform .2s,box-shadow .2s;}
+.card:hover{transform:translateY(-8px);box-shadow:0 8px 30px #00c8d755;}
+.card h3{color:#00c8d7;margin-bottom:8px;}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;max-width:1100px;margin:0 auto;}
+.gallery img{width:100%;border-radius:12px;transition:transform .25s,box-shadow .25s;}
+.gallery img:hover{transform:scale(1.03);box-shadow:0 8px 20px #00c8d755;}
+
+/* Info */
+.info-text{max-width:800px;margin:0 auto 20px;font-size:18px;color:#cfd8dc;}
+.info-details p{color:#b0bec5;margin:6px 0;}
+
+/* Footer */
+footer{text-align:center;padding:30px;background:#080b15;color:#aaa;margin-top:30px;}
+
+/* Responsive */
+@media(max-width:720px){#logo-img{max-width:300px;} .card{width:100%;max-width:420px}}
