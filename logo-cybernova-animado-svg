@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c8d7"/>
+      <stop offset="50%" stop-color="#2fc2cc"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+  </defs>
+  <!-- Escudo -->
+  <path d="M250,20 L460,100 L460,300 Q250,480 40,300 L40,100 Z"
+        fill="url(#grad)" stroke="#d4af37" stroke-width="4">
+    <animateTransform attributeName="transform" type="rotate"
+                      from="0 250 250" to="360 250 250"
+                      dur="20s" repeatCount="indefinite" />
+  </path>
+  <!-- Letra N -->
+  <text x="250" y="290" text-anchor="middle"
+        font-size="160" fill="#fff"
+        font-family="Poppins, sans-serif" font-weight="700">N</text>
+  <!-- Nombre -->
+  <text x="250" y="450" text-anchor="middle"
+        font-size="40" fill="#d4af37"
+        font-family="Poppins, sans-serif" font-weight="600">
+    CyberNova
+  </text>
+</svg>
